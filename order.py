@@ -1,5 +1,7 @@
-import client
+from client import Client
 
-class Order(client.Client):
-    def __init__(self, first_name, last_name, addres, cell_phone, email, gender, total_price, status):
-        super().__init__(first_name, last_name, addres, cell_phone, email, gender)
+class Order():
+    def __init__(self, total_price, status):
+        self.client = Client()
+        self.total_price = total_price
+        self.status = status
