@@ -1,7 +1,4 @@
-from client import Client
-from socialnetwork import Socialnetwork
-
 class Client_socialnetwork():
-    def __init__(self):
-        self.client = Client()
-        self.socialnetwork = Socialnetwork()
+    def __init__(self, client, socialnetwork):
+        self.client = client
+        self.socialnetwork = socialnetwork
